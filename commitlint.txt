@@ -1,0 +1,11 @@
+feat: para novas funcionalidades.
+
+fix: para correções de bugs.
+
+docs: para mudanças na documentação.
+
+chore: para tarefas de manutenção e dependências.
+
+style: para ajustes no estilo (formatação, espaços, etc).
+
+refactor: para mudanças de código que não afetam a funcionalidade.
