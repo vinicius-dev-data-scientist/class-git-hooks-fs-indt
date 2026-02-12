@@ -9,3 +9,5 @@ const floating = 1.76;
 const nome = "gabriel";
 
 const testecommitlint = "aaaaaa";
+
+const testecommitlint2 = "bbbbbbbbb";
