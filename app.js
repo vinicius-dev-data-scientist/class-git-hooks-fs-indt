@@ -8,4 +8,4 @@ const floating = 1.76;
 
 const nome = "gabriel";
 
-const testCommitlint = "aaaaaa";
+const testecommitlint = "aaaaaa";
