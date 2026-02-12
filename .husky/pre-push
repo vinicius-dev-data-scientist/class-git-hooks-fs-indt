@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Pega o nome da branch atual
+local_branch="$(git rev-parse --abbrev-ref HEAD)"
+
+# Define o padrão (Exemplo: feat/..., fix/..., hotfix/..., chore/...)
+valid_branch_regex="^(feat|fix|hotfix|chore|docs|test)\/[a-z0-9._-]+$"
+
+# Mensagem de erro caso não bata com o padrão
+message="Erro: Nome de branch inválido! 
+O nome da sua branch é '$local_branch'.
+O padrão deve ser: tipo/nome-da-feature (ex: feat/minha-task)"
+
+# Se não for a branch 'master' ou 'main' (que já existem), valida o nome
+if [ "$local_branch" != "master" ] && [ "$local_branch" != "main" ]; then
+    if ! echo "$local_branch" | grep -Eq "$valid_branch_regex"; then
+        echo "$message"
+        exit 1
+    fi
+fi
+
+exit 0
