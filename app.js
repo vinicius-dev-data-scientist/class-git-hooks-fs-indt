@@ -10,4 +10,4 @@ const nome = "gabriel";
 
 const testecommitlint = "aaaaaa";
 
-const testecommitlint2 = "bbbbbbbbb";
+const testecommitlint2 = "bbbbbbbbbbbb";
