@@ -7,3 +7,5 @@ const booleano = true;
 const floating = 1.76;
 
 const nome = "gabriel";
+
+const testCommitlint = "aaaaaa";
